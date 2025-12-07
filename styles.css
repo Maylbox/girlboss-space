@@ -444,6 +444,13 @@ p {
   text-decoration: underline;
 }
 
+.link-multi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* small vertical spacing between the two links */
+}
+
+
 /* ===== Footer ===== */
 
 .site-footer {
@@ -472,3 +479,26 @@ p {
     padding-inline: 16px;
   }
 }
+
+@media (max-width: 700px) {
+  .project-card {
+    /* stop using the 3-column grid on mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-header {
+    margin-bottom: 6px;
+  }
+
+  .project-body {
+    width: 100%;
+  }
+
+  .project-thumb {
+    align-self: flex-start;  /* keep it left-aligned */
+    margin-top: 10px;
+  }
+}
+
