@@ -318,7 +318,7 @@ p {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 0.98em; /* ~2% smaller for mobile users otherwise the header wraps around*/
+    font-size: 1.1em; /* smaller for mobile users otherwise the header wraps around*/
   }
 }
 
