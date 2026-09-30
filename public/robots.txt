@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /home/
+Disallow: /blackjack/room/
+Disallow: /api/

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Blackjack — girlboss.space</title>
+    <link rel="stylesheet" href="/assets/blackjack.css" />
+    <script type="module" src="/assets/blackjack.js"></script>
+  </head>
+  <body>
+    <div class="cardroom-shell">
+      <header class="masthead">
+        <a href="/blackjack/" class="brand"
+          >girlboss.space <span>/ blackjack</span></a
+        ><button type="button" class="text-button" id="show-rules">
+          Rules
+        </button>
+      </header>
+      <main id="app"><p class="loading">Opening the card room…</p></main>
+      <footer class="site-note">Fictional chips. No cash value.</footer>
+    </div>
+    <dialog id="rules" aria-labelledby="rules-title">
+      <div class="dialog-heading">
+        <h2 id="rules-title">Table rules</h2>
+        <button id="close-rules" type="button" aria-label="Close rules">
+          Close
+        </button>
+      </div>
+      <ul>
+        <li>Six decks. Dealer stands on soft 17 and peeks for Blackjack.</li>
+        <li>
+          Blackjack pays 3:2. An ordinary win pays 1:1. A tie returns your bet.
+        </li>
+        <li>Double on any first two cards, including after a split.</li>
+        <li>
+          Split matching ranks, up to three hands. Split aces get one card each,
+          then stand. A split 21 is not a natural Blackjack.
+        </li>
+        <li>No insurance or surrender.</li>
+        <li>Start with 1,000 chips. Bet 10–250, in steps of 10.</li>
+        <li>
+          Shoe reshuffles before a round at 25% remaining. If a very long round
+          exhausts the shoe, a fresh shuffled shoe is used.
+        </li>
+        <li>
+          The host starts and advances rounds. A player who cannot afford the
+          minimum sits out. Turns stand after 60 seconds.
+        </li>
+        <li>
+          Seats are held for 90 seconds after disconnecting. Tables expire after
+          24 hours without activity.
+        </li>
+      </ul>
+    </dialog>
+    <noscript
+      ><p>This card room needs JavaScript to connect to the table.</p></noscript
+    >
+  </body>
+</html>
