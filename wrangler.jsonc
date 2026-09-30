@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "girlboss-space",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "none",
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "ROOMS", "class_name": "BlackjackRoom" }],
+  },
+  "exports": {
+    "BlackjackRoom": { "type": "durable-object", "storage": "sqlite" },
+  },
+}

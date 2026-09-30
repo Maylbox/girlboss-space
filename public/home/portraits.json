@@ -1,37 +1,36 @@
 [
   {
-    "src": "img/portraits/IMG_6954.jpg",
+    "src": "/img/portraits/IMG_6954.jpg",
     "alt": "1",
     "side": "left",
     "order": 1
   },
-    {
-    "src": "img/portraits/IMG_0218.jpg",
+  {
+    "src": "/img/portraits/IMG_0218.jpg",
     "alt": "2",
     "side": "left",
     "order": 1
   },
-    {
-    "src": "img/portraits/IMG_7271.jpg",
+  {
+    "src": "/img/portraits/IMG_7271.jpg",
     "alt": "3",
     "side": "left",
     "order": 1
   },
-    {
-    "src": "img/portraits/IMG_7378.jpg",
+  {
+    "src": "/img/portraits/IMG_7378.jpg",
     "alt": "4",
     "side": "left",
     "order": 1
-  }
-  ,
-    {
-    "src": "img/portraits/IMG_7386.jpg",
+  },
+  {
+    "src": "/img/portraits/IMG_7386.jpg",
     "alt": "5",
     "side": "left",
     "order": 1
   },
-    {
-    "src": "img/portraits/IMG_7046.jpg",
+  {
+    "src": "/img/portraits/IMG_7046.jpg",
     "alt": "6",
     "side": "left",
     "order": 1

@@ -1,0 +1,27 @@
+{
+  "name": "girlboss-space",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "check": "tsc --noEmit && tsc --noEmit -p tsconfig.worker.json",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:integration": "node --import tsx --test tests/integration/*.test.ts",
+    "test:browser": "node --import tsx tests/browser/check.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260930.2",
+    "@playwright/test": "^1.63.0",
+    "esbuild": "^0.28.2",
+    "miniflare": "^5.20260930.0-alpha",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.144.0"
+  }
+}

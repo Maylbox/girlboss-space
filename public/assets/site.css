@@ -1,0 +1,244 @@
+:root {
+  color-scheme: dark;
+  --ink: #e9dbe0;
+  --muted: #bd9fa9;
+  --pink: #dfa8bd;
+  --border: #5f3a4b;
+  --bg: #1b1017;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font:
+    13px/1.65 Arial,
+    Helvetica,
+    sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+a {
+  color: var(--pink);
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: #fff1f7;
+}
+a:focus-visible {
+  outline: 2px solid #efc0d2;
+  outline-offset: 4px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+.holding {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.holding main {
+  padding: 30px;
+}
+.holding h1 {
+  font:
+    normal 23px Georgia,
+    serif;
+  margin-bottom: 8px;
+}
+.holding p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.personal {
+  padding: 42px 20px;
+  background-color: #1a131b;
+  background-image: radial-gradient(#64424f 0.65px, transparent 0.65px);
+  background-size: 31px 31px;
+}
+.home-shell {
+  max-width: 950px;
+  margin: auto;
+  border: 1px solid #725060;
+  background: #261d25;
+  box-shadow: 0 3px 15px #0b080b;
+}
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 13px 22px;
+  border-bottom: 1px solid #725060;
+  background: linear-gradient(#46303e, #362532);
+}
+.wordmark {
+  font:
+    22px Georgia,
+    serif;
+  text-decoration: none;
+  color: #f0d6e0;
+}
+.home-header nav {
+  display: flex;
+  gap: 19px;
+  font-size: 12px;
+}
+.home-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 218px;
+}
+.home-body main {
+  padding: 25px;
+}
+.home-section + .home-section {
+  margin-top: 30px;
+}
+.home-section h1 {
+  font:
+    normal 25px Georgia,
+    serif;
+  margin-bottom: 5px;
+}
+.meow {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 17px;
+}
+.home-section h2,
+.home-sidebar h2 {
+  font:
+    normal 17px Georgia,
+    serif;
+  padding: 6px 9px;
+  background: #3b2a35;
+  border-top: 1px solid #664856;
+  border-bottom: 1px solid #664856;
+  margin-bottom: 15px;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  font-size: 12px;
+  row-gap: 4px;
+  margin: 18px 0 0;
+}
+.profile dt {
+  color: var(--muted);
+}
+.profile dd {
+  margin: 0;
+}
+.directory-entry {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 14px;
+  border-top: 1px dotted #735262;
+  padding: 19px 0 8px;
+}
+.directory-entry h3 {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.directory-entry p {
+  margin-bottom: 9px;
+}
+.project-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.tags {
+  color: var(--muted);
+  font-size: 11px;
+}
+.mod-thumb {
+  max-width: 125px;
+  max-height: 65px;
+  object-fit: contain;
+}
+.astro-photo {
+  display: block;
+  width: min(100%, 270px);
+  max-height: 190px;
+  object-fit: cover;
+  border: 1px solid #856174;
+  padding: 3px;
+  background: #180f17;
+}
+.home-sidebar {
+  border-left: 1px solid #593e4d;
+  padding: 20px 13px;
+  background: #211820;
+}
+.home-sidebar h2 {
+  font-size: 14px;
+}
+.home-sidebar figure {
+  margin: 0 0 17px;
+  background: #dbc4ce;
+  padding: 5px 5px 15px;
+  transform: rotate(-2deg);
+}
+.home-sidebar figure + figure {
+  transform: rotate(2deg);
+}
+.home-sidebar img {
+  display: block;
+  width: 100%;
+  max-height: 230px;
+  object-fit: cover;
+}
+.home-sidebar p {
+  color: var(--muted);
+  text-align: center;
+  font-size: 11px;
+}
+.home-footer {
+  border-top: 1px solid #593e4d;
+  padding: 10px 22px;
+  font-size: 11px;
+  color: var(--muted);
+}
+@media (max-width: 650px) {
+  .personal {
+    padding: 14px 10px;
+  }
+  .home-header {
+    padding: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .home-body {
+    display: block;
+  }
+  .home-body main {
+    padding: 18px;
+  }
+  .home-sidebar {
+    border-top: 1px solid #593e4d;
+    border-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .home-sidebar h2,
+  .home-sidebar p {
+    grid-column: 1/-1;
+  }
+  .home-sidebar figure {
+    margin: 0;
+  }
+  .home-sidebar img {
+    max-height: 250px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
